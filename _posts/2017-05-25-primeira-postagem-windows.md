@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Jekyll Primeira Postagem (Windows)
-date: 2017-05-24 21:29:54
+date: 2017-07-04 19:07:05
 published: true
 tags: [htmlwidgets, r]
 
