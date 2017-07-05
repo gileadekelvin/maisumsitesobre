@@ -1,0 +1,65 @@
+---
+title: "Uma visão interativa sobre as Séries Originais Netflix"
+author: "Gileade"
+layout: post
+published: true
+excerpt_separator: ""
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.align="center", screenshot.force = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(htmltools)
+library(highcharter)
+```
+
+```{r leitura dos dados}
+series_imdb <- read_csv("../serie/series_from_imdb.csv")
+```
+
+```{r}
+series_netflix <- series_imdb %>% filter(series_name %in% c("13 Reasons Why", "Daredevil",  "House of Cards", "Narcos", "Sense8", "Stranger Things")) %>%
+  mutate(series_name = factor(series_name)) %>%
+  mutate(season = factor(season))
+```
+
+## Como a avaliação das séries se comporta ao longo das temporadas?
+
+Nós selecionamos seis séries Originais Netflix e com base no ratings (notas) atribuídas aos episódios de cada série traçamos um gráfico de linha interativa que mostra como as notas dos episódios se comportam à medida que a série e suas temporadas vão avançando. A fonte dos dados é o IMDB, um banco de dados online com informação sobre música, filmes, **séries**, cinema, jogos, programas e comerciais de TV, atualmente percente a Amazon.
+
+```{r}
+map(levels(series_netflix$series_name), function(x){
+  series_netflix %>%
+    filter(series_name == x) %>% 
+    hchart("line", hcaes(x = series_ep, y = UserRating, group = season)) %>%
+    hc_add_theme(hc_theme_smpl()) %>% 
+    hc_title(text = x) %>%
+    hc_xAxis(title = list(text = "Número do episódio"), tickInterval = 2) %>%
+    hc_yAxis(title = list(text = "Nota do episódio"), tickInterval = .2, min = 7.5, max = 9.7) %>%
+    hc_tooltip(pointFormat = "Nome: {point.Episode} <br> Nota: {point.y} <br> Número de Votos: {point.UserVotes}") %>%
+    hc_legend(title = list(text = "Temporada"), align = "right", verticalAlign = "top",
+            layout = "vertical", x = 0, y = 50)
+  }) %>% 
+  hw_grid(rowheight = 220, ncol = 2)  %>% browsable()
+```
+
+    
+A visualização nos mostra como algumas séries como 13 Reasons Why, Sense8 e Stranger Things parecem ter uma tendência maior de crescimento nas avaliações conforme a série avança. Apesar dos picos, os episódios em geral, melhoram de avaliação conforme as temporadas avançam e a série também.
+
+É possível perceber como dentro de uma série as temporadas são distintas com relação ao formato das linhas na evolução das notas. Narcos, por exemplo, tem uma segunda temporada com maior amplitude na variação dos episódios do que na primeira temporada.
+
+House of Cards parece ter variações maiores entre episódios que são adjuntos (vizinhos), ou seja, existe uma maior amplitude na linha traçada quando comparada a outras séries como Narcos. Entenda amplitude como a distância entre as melhores avaliações e as piores. Quanto maior a amplitude e quanto mais frequente é a presença de picos entre episódios vizinhos maior é variação, segundo o critério adotado para esta análise.
+
+Outras informações podem ser retiradas ao interagir com a visualização como o nome do episódio, sua nota e o número de votos que ele recebeu no IMDB.
+
+#### Considerações
+
+Através da visualização é possível explorar sobre os episódios das séries originais Netflix selecionadas e materializar como é a evolução da avaliação dos episódios conforme a temporada vai avançando. É possível observar tendências de subidas em algumas séries e maior variação (picos, altos e baixos em episódios vizinhos, maior amplitude) em outras.
+
+Espero que você possa ter tido outros insights legais sobre a análise e até a próxima!!!
+
+
+
