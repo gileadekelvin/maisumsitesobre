@@ -1,5 +1,5 @@
 ---
-title: "Filmes: renda, personagens e palavras"
+title: "Agrupamento de filmes - Falas femininas importam?"
 author: "Gileade Kelvin"
 layout: post
 published: true
@@ -257,6 +257,8 @@ filmes.agrupamento %>%
 Nessa visualização acima é possível identificar quais filmes pertencem a cada grupo. Também é possível observar que não existem filmes com mais de 70 % de falas sendo femininas com mais de 500 milhões de dólares, o que chega mais perto é Sleeping Beauty. No tempo em que essa análise está sendo feita Wonder Woman (Mulher Maravilha) acaba de se tornar um dos maiores sucessos de bilheteria de filmes protagonizados por mulheres.
 
 O eixo x é a porcentagem de falas femininas com relação ao total de falas do filme, o eixo y é a renda bruta do filme em milhões de dólares, o tamanho das bolhas nesse gráfico é o número de personagens que um filme tem e a cor é o grupo no qual o filme está. Explore a visualização e tente encontrar filmes que você conhece e descubra informações sobre ele considerando as variáveis estudadas nessa análise.
+
+Sim, falas femininas importam e cada vez mais temos que discutir sobre o assunto de igualdade de gênero. Precisamos mudar o mundo a nossa volta, e os dados podem afirmar isso.
 
 Por hoje é só, até a próxima análise !!!
 

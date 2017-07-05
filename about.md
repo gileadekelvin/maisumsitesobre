@@ -1,18 +1,11 @@
 ---
 layout: page
-title: About
+title: Sobre
 permalink: /about/
 ---
-Oi, meu nome é Arthur.
+Olá, meu nome é Gileade Kelvin
 
-tudo bom?
+Sou estudante de Ciência da Computação na Universidade Federal de Campina Grande - UFCG. Esse blog tem o objetivo de mostrar as coisas legais que ando fazendo no meu curso, principalmente no que se diz respeito a análise de dados. Atualmente sou estagiário do Ministério Público da Paraíba e nesse estágio descobri o quanto gosto de ciência de dados e o quanto essa área é fascinante. Se você já conheceu então deve concordar comigo :), se ainda não então leia alguns de meus posts e abra os olhos para um novo mundo.
 
-espero que sim :)
+Meu email para contato é: gileadekelvin [at] gmail.com
 
-sou estudante, mais especificamente, de ciência da computação. Não, eu não sei rackear Facebook ou WhatsApp, mas sei mexer com algumas estatísticas e com uns gráficos legais.
-
-o propósito desse blog é postar coisas que eu fiz (as legais), projetos pessoais ou até mesmo os trabalhos da universidade, e é isso.
-
-sim, meu contato: arthurlustosaa@gmail.com
-
-facebook, twitter e github é só clicar nos balõezinhos abaixo.

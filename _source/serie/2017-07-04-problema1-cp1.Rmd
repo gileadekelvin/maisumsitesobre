@@ -1,5 +1,5 @@
 ---
-title: "Análise sobre os dados de Séries"
+title: "Séries Originais Netflix - Qual a melhor?"
 subtitle: "Problema 1 - Checkpoint 1"
 author: "Gileade"
 layout: post

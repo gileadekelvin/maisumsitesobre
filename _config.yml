@@ -1,13 +1,13 @@
 # Site settings
-title: mais um site sobre
-subtitle: estatísticas e outras coisas
-email: arthurlustosaa@gmail.com
+title: Portfólio - Gileade
+subtitle: Blog sobre análise de dados. Diferentes temas e discussões com o intuito de usar a ciência de dados como nova forma de enxergar o mundo a nossa volta.
+email: gileadekelvin@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  um site sobre estatísticas, tutorias e coisas outras. 
+  Blog sobre análise de dados. Diferentes temas e discussões com o intuito de usar a ciência de dados como nova forma de enxergar o mundo a nossa volta.
 baseurl: "/portfolio/" # the subpath of your site, e.g. /blog/
 url: "https://gileadekelvin.github.io/portfolio/" # the base hostname & protocol for your site
-twitter_username: portfolio
-github_username:  portfolio
+twitter_username: gileadekelvin
+github_username:  gileadekelvin
 permalink: /:year/:month/:title.html
 
 # Build settings
