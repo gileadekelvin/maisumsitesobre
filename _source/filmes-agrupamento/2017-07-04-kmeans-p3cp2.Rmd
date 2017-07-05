@@ -3,6 +3,7 @@ title: "Filmes: renda, personagens e palavras"
 author: "Gileade Kelvin"
 layout: post
 published: true
+excerpt_separator: ""
 ---
 
 ```{r setup, include=FALSE}
