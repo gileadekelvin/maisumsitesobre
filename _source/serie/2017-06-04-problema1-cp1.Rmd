@@ -8,7 +8,7 @@ excerpt_separator: ""
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align="center", screenshot.force = FALSE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align="center", fig.cap = '', screenshot.force = FALSE)
 ```
 
 ```{r}
