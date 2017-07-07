@@ -4,6 +4,7 @@ author: "Gileade Kelvin"
 layout: post
 published: true
 excerpt_separator: ""
+comments: true
 ---
 
 ```{r setup, include=FALSE}

@@ -4,6 +4,7 @@ author: "Gileade"
 layout: post
 published: true
 excerpt_separator: ""
+comments: true
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.align="center", screenshot.force = FALSE, fig.cap = '')

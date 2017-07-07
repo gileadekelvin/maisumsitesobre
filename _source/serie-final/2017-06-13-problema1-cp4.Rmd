@@ -5,6 +5,7 @@ subtitle: "Problema 1 - Checkpoint 4"
 layout: post
 published: true
 excerpt_separator: ""
+comments: true
 ---
 
 ```{r setup, include=FALSE}
